@@ -89,7 +89,7 @@ namespace AnasenCross {
             meanPath = m_targetMaterial.GetPathLength(params.projectile.Z, params.projectile.A, params.initialBeamEnergy, datum.beamEnergyLab);
             meanPathErr = m_targetMaterial.GetPathLength(params.projectile.Z, params.projectile.A, params.initialBeamEnergy,
                                                          datum.beamEnergyLab + s_beamKELabSigma);
-            datum.path = pathMax - pathMin;
+            datum.path = std::abs(pathMax - pathMin);
             datum.sigma_path = std::abs(meanPath - meanPathErr);
             datum.counts = expHisto->GetBinContent(bin);
             datum.effciency = simEffHisto->GetBinContent(bin);
