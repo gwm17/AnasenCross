@@ -13,6 +13,7 @@ namespace AnasenCross {
         double initialBeamEnergy = 0.0; //MeV
         NucData projectile;
         NucData target;
+        double nIncidentParticles = 0.0;
     };
 }
 
