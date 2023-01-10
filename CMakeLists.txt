@@ -8,4 +8,5 @@ project(AnasenCross)
 
 find_package(ROOT REQUIRED)
 
+add_subdirectory(vendor/catima)
 add_subdirectory(src)

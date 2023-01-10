@@ -3,6 +3,7 @@ add_executable(AnasenCross)
 target_include_directories(AnasenCross PRIVATE
     SYSTEM ${ROOT_INCLUDE_DIRS}
     PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}
+            ${CMAKE_CURRENT_SOURCE_DIR}/../vendor/catima/
 )
 
 target_sources(AnasenCross PRIVATE
@@ -17,4 +18,4 @@ target_sources(AnasenCross PRIVATE
     main.cpp
 )
 
-target_link_libraries(AnasenCross PRIVATE ${ROOT_LIBS})
+target_link_libraries(AnasenCross PRIVATE ${ROOT_LIBS} catima)
