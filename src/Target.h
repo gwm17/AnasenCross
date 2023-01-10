@@ -18,9 +18,10 @@ namespace AnasenCross {
 
 	 	double GetEnergyLoss(int zp, int ap, double startEnergy, double pathLength);
 	 	double GetReverseEnergyLoss(int zp, int ap, double finalEnergy, double pathLength);
-		double GetPathLength(int zp, int ap, double startEnergy, double finalEnergy); //Returns pathlength for a particle w/ startE to reach finalE (cm)
+		double GetPathLength(int zp, int ap, double startEnergy, double finalEnergy); //Returns pathlength for a particle w/ startE to reach finalE (m)
 		double GetAngularStraggling(int zp, int ap, double energy, double pathLength); //Returns planar angular straggling in radians for a particle with energy and pathLength
 	 	inline double GetDensity() { return m_material.density(); } //g/cm^3
+		inline double GetNumberDensity(double pathLength) { m_material.thickness_cm(pathLength * 100.0); return m_material.number_density_cm2(); } //atoms/molecules per cm^2
 	
 	private:
 		catima::Material m_material;

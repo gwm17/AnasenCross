@@ -7,6 +7,8 @@ target_include_directories(AnasenCross PRIVATE
 )
 
 target_sources(AnasenCross PRIVATE
+    Application.h
+    Application.cpp
     CSParams.h
     CrossSection.h
     CrossSection.cpp
@@ -15,7 +17,10 @@ target_sources(AnasenCross PRIVATE
     Target.h
     Target.cpp
     Precision.h
+    Assert.h
     main.cpp
 )
 
-target_link_libraries(AnasenCross PRIVATE ${ROOT_LIBS} catima)
+target_link_libraries(AnasenCross PRIVATE ${ROOT_LIBRARIES} catima fmt::fmt nlohmann_json::nlohmann_json)
+
+set_target_properties(AnasenCross PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${ACROSS_BINARY_DIR})

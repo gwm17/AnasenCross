@@ -1,0 +1,58 @@
+{
+    "target": {
+        "density": 8.76e-5,
+        "elements": [
+            [1, 2, 2]
+        ]
+    },
+    "reactions": [
+        {
+            "experiment_file": "/media/data/gwm17/be7_oldAnasen/analyzed/twoTrackRedux.root",
+            "simulation_file": "/media/data/gwm17/be7_oldAnasen/simulation/7Beda_5Lip_gs_400torrD2_fullRange_exFunc.root",
+            "output_file": "./output/7Beda_5Lip_gs_400torrD2_crossSection.csv",
+            "experiment_histo_name": "Ecm_li5gs_reconTwoParticle_goodBins",
+            "sim_eff_histo_name": "efficiency",
+            "sim_samples_histo_name": "excitationFunc",
+            "sim_counts_histo_name": "excitationDetFunc",
+            "beam_energy_MeV": 17.19,
+            "projectileZ": 4,
+            "projectileA": 7,
+            "targetZ": 1,
+            "targetA": 2,
+            "n_incident_particles": 2.422e9,
+            "target_particles_per_molecule": 2
+        },
+        {
+            "experiment_file": "/media/data/gwm17/be7_oldAnasen/analyzed/twoTrackRedux.root",
+            "simulation_file": "/media/data/gwm17/be7_oldAnasen/simulation/7Bedp_8Bea_gs_400torrD2_fullRange_exFunc.root",
+            "output_file": "./output/7Bedp_8Bea_gs_400torrD2_crossSection.csv",
+            "experiment_histo_name": "Ecm_be8gs_reconTwoParticle_goodBins",
+            "sim_eff_histo_name": "efficiency",
+            "sim_samples_histo_name": "excitationFunc",
+            "sim_counts_histo_name": "excitationDetFunc",
+            "beam_energy_MeV": 17.19,
+            "projectileZ": 4,
+            "projectileA": 7,
+            "targetZ": 1,
+            "targetA": 2,
+            "n_incident_particles": 2.422e9,
+            "target_particles_per_molecule": 2
+        },
+        {
+            "experiment_file": "/media/data/gwm17/be7_oldAnasen/analyzed/twoTrackRedux.root",
+            "simulation_file": "/media/data/gwm17/be7_oldAnasen/simulation/7Bedp_8Bea_1ex_400torrD2_fullRange_exFunc.root",
+            "output_file": "./output/7Bedp_8Bea_1ex_400torrD2_crossSection.csv",
+            "experiment_histo_name": "Ecm_be81ex_reconTwoParticle_goodBins",
+            "sim_eff_histo_name": "efficiency",
+            "sim_samples_histo_name": "excitationFunc",
+            "sim_counts_histo_name": "excitationDetFunc",
+            "beam_energy_MeV": 17.19,
+            "projectileZ": 4,
+            "projectileA": 7,
+            "targetZ": 1,
+            "targetA": 2,
+            "n_incident_particles": 2.422e9,
+            "target_particles_per_molecule": 2
+        }
+    ]
+}
